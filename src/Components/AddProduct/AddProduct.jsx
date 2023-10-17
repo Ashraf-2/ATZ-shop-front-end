@@ -9,7 +9,7 @@ const AddProduct = () => {
             <div className="max-w-5xl mx-auto">
 
                 <h2 className="text-3xl font-bold text-center py-5 text-sky-500">Add Your Product</h2>
-                <form className="bg-red-200 p-10">
+                <form onSubmit={handelAddProduct} className="bg-red-200 p-10">
                     {/* form row 1*/}
                     <div className="md:flex mb-5">
                         <div className="form-control md:w-1/2">
