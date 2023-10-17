@@ -57,18 +57,24 @@ const AddProduct = () => {
                                 <span className="label-text">Short Description</span>
                             </label>
                             <label className="input-group">
-                                {/* <span>Coffee</span> */}
                                 <input type="text" name="category" placeholder="Description" className="input input-bordered w-full" required />
                             </label>
                         </div>
                         <div className="form-control ml-4 md:w-1/2">
                             <label className="label">
+                                <span className="label-text">Photo</span>
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="photo_url" placeholder="Enter photo URL" className="input input-bordered rounded w-full" required />
+                            </label>
+                        </div>
+                    </div>
+
+                    <div className="form-control md:w-1/2 flex flex-col broder border-2">
+                        
+                            <label className="label">
                                 <span className="label-text">Product Type</span>
                             </label>
-                            {/* <label className="input-group"> */}
-                            {/* <span>Quantity</span> */}
-                            {/* <input type="text" name="details" placeholder="Enter Product Type/category" className="input input-bordered rounded w-full" required /> */}
-
                             <label className="label cursor-pointer">
                                 <span className="label-text">Fashion</span>
                                 <input type="radio" name="radio-10" className="radio checked:bg-red-500" checked />
@@ -79,30 +85,27 @@ const AddProduct = () => {
                                 <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked />
                             </label>
                             <label className="label cursor-pointer">
-                                <span className="label-text">Furniture</span>
-                                <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked />
+                                <span className="label-text">Electronics</span>
+                                <input type="radio" name="radio-10" className="radio checked:bg-amber-500" checked />
                             </label>
                             <label className="label cursor-pointer">
                                 <span className="label-text">Furniture</span>
-                                <input type="radio" name="radio-10" className="radio checked:bg-blue-500" checked />
+                                <input type="radio" name="radio-10" className="radio checked:bg-stone-500" checked />
                             </label>
-                            {/* </label> */}
-                        </div>
-                    </div>
-                    <div className="form-control md:w-full">
-                        <label className="label">
-                            <span className="label-text">Photo</span>
-                        </label>
-                        <label className="input-group">
-                            {/* <span>Quantity</span> */}
-                            <input type="text" name="photo_url" placeholder="Enter photo URL" className="input input-bordered rounded w-full" required />
-                        </label>
+                            <label className="label cursor-pointer">
+                                <span className="label-text">Books</span>
+                                <input type="radio" name="radio-10" className="radio checked:bg-purple-500" checked />
+                            </label>
+                            <label className="label cursor-pointer">
+                                <span className="label-text">Groceries</span>
+                                <input type="radio" name="radio-10" className="radio checked:bg-orange-500" checked />
+                            </label>
                     </div>
                     <input type="submit" value="Add Product" className="w-full btn btn-neutral mt-5" />
 
                 </form>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 
