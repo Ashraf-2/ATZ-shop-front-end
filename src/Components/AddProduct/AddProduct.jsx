@@ -1,6 +1,7 @@
 
 const AddProduct = () => {
     const handelAddProduct = (e) => {
+        e.preventDefault();
         console.log('hi');
     }
     return (
