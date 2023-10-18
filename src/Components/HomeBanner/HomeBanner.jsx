@@ -16,7 +16,7 @@ const HomeBanner = () => {
                 <div className="flex flex-col justify-start my-16">
                     <h2 className="max-w-md text-5xl font-bold ">Best Official Product shop in town</h2>
                     <h3 className="max-w-md my-2 text-3xl">6+ Branded Product in One Shop</h3>
-                    <button className="btn btn-neutral mt-4 w-[250px]">Get Started</button>
+                    <button className="btn btn-neutral mth-4 w-[250px]">Get Started</button>
                 </div>
             </div>
             <div className="flex-1">
