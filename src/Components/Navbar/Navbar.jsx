@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
-import userPic from "../../assets/user.png";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);

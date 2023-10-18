@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
 import swal from "sweetalert";
 import { AuthContext } from "../../Provider/AuthProvider";

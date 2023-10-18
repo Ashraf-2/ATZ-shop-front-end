@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import app from "../../firebase.config";
-import swal from 'sweetalert';
 
 
 export const AuthContext = createContext(null);
