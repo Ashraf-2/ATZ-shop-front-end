@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "image": "https://imagizer.imageshack.com/v2/320x240q70/923/45Ujjk.jpg",
+      "brandname": "Apple"
+    },
+    {
+      "id": 2,
+      "image": "https://imagizer.imageshack.com/v2/320x240q70/922/PSd0bX.png",
+      "brandname": "Lenovo"
+    },
+    {
+      "id": 3,
+      "image": "https://imagizer.imageshack.com/v2/320x240q70/923/m3GWEt.png",
+      "brandname": "Canon"
+    },
+    {
+      "id": 4,
+      "image": "https://imagizer.imageshack.com/v2/320x240q70/923/w8npXZ.png",
+      "brandname": "Google"
+    },
+    {
+      "id": 5,
+      "image": "https://imagizer.imageshack.com/v2/320x240q70/924/4WasXK.png",
+      "brandname": "mI"
+    },
+    {
+      "id": 6,
+      "image": "https://imagizer.imageshack.com/v2/320x240q70/922/AJwqCi.jpg",
+      "brandname": "Samsung"
+    }
+  ]
+  

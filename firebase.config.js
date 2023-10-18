@@ -10,7 +10,7 @@ const firebaseConfig = {
   projectId: "e-commarce-auth-xm10",
   storageBucket: "e-commarce-auth-xm10.appspot.com",
   messagingSenderId: "636089921434",
-  appId: "1:636089921434:web:104ab6b79b949d12751423"
+  appId: "1:636089921434:web:98d59a7a566300b9751423"
 };
 
 // Initialize Firebase
