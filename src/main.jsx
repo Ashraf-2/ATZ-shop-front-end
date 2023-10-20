@@ -11,6 +11,9 @@ import Login from './Components/SignPage/Login';
 import SingUp from './Components/SignPage/SingUp';
 import ErrorPage from './Components/ErrorPage';
 import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes';
+import BrndSpcificProd from './Components/BrandSpecificProd/BrndSpcificProdPage';
+import Anypage from './Anypage';
+import DetailedProduct from './Components/BrandSpecificProd/DetailedProduct';
 
 
 
@@ -23,7 +26,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('brands.json')
+        loader: () => fetch('/brands.json')
+      },
+      {
+        path: '/anypage',
+        element: <Anypage></Anypage>
       },
       {
         path: '/addProduct',
@@ -31,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/myCart',
-        element: <MyCart></MyCart>
+        element: <MyCart></MyCart>,
       },
       {
         path: '/login',
@@ -40,7 +47,20 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <SingUp></SingUp>
+      },
+      {
+        path: '/brandSpcificProd/:brandname',
+        element: <BrndSpcificProd></BrndSpcificProd>,
+        loader: ()=> fetch('http://localhost:5000/products')
+      },
+      {
+        path: '/detailedProduct/:prodName',
+        element: <DetailedProduct></DetailedProduct>,
+        loader: ()=> fetch('http://localhost:5000/products')
+
       }
+      
+      
     ]
   }
 ]);

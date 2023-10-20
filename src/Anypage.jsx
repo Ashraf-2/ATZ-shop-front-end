@@ -1,5 +1,5 @@
 
-const BrndSpcificProd = () => {
+const Anypage = () => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const BrndSpcificProd = () => {
     );
 };
 
-export default BrndSpcificProd;
+export default Anypage;

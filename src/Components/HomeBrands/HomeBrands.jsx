@@ -5,8 +5,11 @@ import { Link } from "react-router-dom";
 
 const HomeBrands = ({ brand }) => {
     const { id, image, brandname } = brand;
+    // console.log(brand);
+
     return (
-        <Link to={brandname}>
+        <Link to={`/brandSpcificProd/${brandname}`}>
+            {/* to={brandname && 'Apple' ? '/appleProducts':'/' */}
             <div className="card  bg-base-100 shadow-xl">
                 <figure><img className="h-[200px]" src={image} alt={brandname} /></figure>
                 <div className="flex justify-center items-center">

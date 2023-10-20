@@ -1,8 +1,9 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
 
 const Root = () => {
+    
     return (
         <div >
             <Navbar></Navbar>
