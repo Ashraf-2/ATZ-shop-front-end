@@ -13,10 +13,20 @@ const DetailedProduct = () => {
     return (
         <div>
             <h2>hello</h2>
-            <div>
+            <div className="max-w-lg mx-auto bg-red-100 border flex flex-row justify-normal">
                 <div>
-                    {/* <img src={photo_url} alt={prod_name} /> */}
+                    <img src={photo_url} alt={prod_name} />
                 </div>
+                <div className="card  bg-gray-300">
+                    <h2>{prod_name}</h2>
+                    <p>Brand: {brand_name}</p>
+                    <p>Price: {price}</p>
+                    <p>Rating: {rating}</p>
+                </div>
+            </div>
+            <div>
+                <p><span>Description: </span></p>
+                <p>{description}</p>
             </div>
         </div>
     );
