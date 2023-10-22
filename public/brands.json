@@ -6,27 +6,27 @@
   },
   {
     "id": 2,
-    "image": "https://imagizer.imageshack.com/v2/320x240q70/922/PSd0bX.png",
-    "brandname": "Lenovo"
-  },
-  {
-    "id": 3,
     "image": "https://imagizer.imageshack.com/v2/320x240q70/923/m3GWEt.png",
     "brandname": "Cannon"
   },
   {
-    "id": 4,
+    "id": 3,
     "image": "https://imagizer.imageshack.com/v2/320x240q70/923/w8npXZ.png",
     "brandname": "Google"
   },
   {
-    "id": 5,
+    "id": 4,
     "image": "https://imagizer.imageshack.com/v2/320x240q70/924/4WasXK.png",
     "brandname": "Xiaomi"
   },
   {
-    "id": 6,
+    "id": 5,
     "image": "https://imagizer.imageshack.com/v2/320x240q70/922/AJwqCi.jpg",
     "brandname": "Samsung"
+  },
+  {
+    "id": 6,
+    "image": "https://imagizer.imageshack.com/v2/320x240q70/922/PSd0bX.png",
+    "brandname": "Lenovo"
   }
 ]

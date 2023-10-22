@@ -11,7 +11,6 @@ const PrivateRoutes = ({children}) => {
     if(loading)
     {
         return <span className="loading loading-spinner loading-lg"></span>
-
     }
     if(user){
         return children;

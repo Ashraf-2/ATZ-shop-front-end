@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import ImageSlider from "../BrandSpecificProd/ImageSlider";
 
 const MyCart = () => {
     const products = useLoaderData();
@@ -6,6 +7,7 @@ const MyCart = () => {
     return (
         <div>
             <h2>My Cart</h2>
+
 
         </div>
     );
