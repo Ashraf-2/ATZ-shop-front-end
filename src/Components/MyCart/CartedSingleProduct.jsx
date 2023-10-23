@@ -1,3 +1,4 @@
+import swal from "sweetalert";
 
 const CartedSingleProduct = ({ product,carts,setLoadCarts }) => {
     // console.log(product);
@@ -18,6 +19,7 @@ const CartedSingleProduct = ({ product,carts,setLoadCarts }) => {
                 //remove user from the UI
                 const remainProduct = carts.filter(product => product._id !==id);
                 console.log("re ", remainProduct);
+                swal("Delete", "You deleted this product successfully", "success");
                 setLoadCarts(remainProduct);
             }
         })
