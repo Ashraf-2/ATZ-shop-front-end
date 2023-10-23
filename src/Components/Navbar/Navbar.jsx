@@ -18,8 +18,8 @@ const Navbar = () => {
         <li><NavLink to="/myCart">My Cart</NavLink></li>
     </>
     return (
-        <div className="px-10">
-            <div className="navbar bg-base-100">
+        
+            <div className="navbar px-10 bg-[#FFDFDF]">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -73,7 +73,7 @@ const Navbar = () => {
                 </div>
             
             </div>
-        </div>
+        
     );
 };
 

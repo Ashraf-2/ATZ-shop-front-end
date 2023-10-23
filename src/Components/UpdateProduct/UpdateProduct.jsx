@@ -24,32 +24,41 @@ const UpdateProduct = () => {
 
         console.log("updated information: ", updatedProduct);
 
-        fetch(`http://localhost:5000/products/${_id}`, {
-            method: "PUT",
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(updatedProduct)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                // alert("data send successfully");
-                /**
-                 * if(data.modifiedCount > 0)
-                 */
-                swal("congratulations!", "you updated your coffee successfully", "success");
-            })
+        // fetch(`http://localhost:5000/products/${_id}`, {
+        //     method: "PUT",
+        //     headers: {
+        //         'content-type': 'application/json'
+        //     },
+        //     body: JSON.stringify(updatedProduct)
+        // })
+        // .then(res => res.json())
+        // .then(data => {
+        //     console.log(data)
+        //     // alert("data send successfully");
+        //     /**
+        //      * if(data.modifiedCount > 0)
+        //      */
+        //     swal("congratulations!", "you updated your coffee successfully", "success");
+        // })
+    fetch(`http://localhost:5000/products/${_id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedProduct),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
     }
 
     return (
         <div>
-            <h2>updaet product</h2>
+            <div className="max-w-5xl mx-auto ">
 
-            <div className="max-w-5xl mx-auto">
-
-                <h2 className="text-3xl font-bold text-center py-5 text-red-400">Update Product :{prod_name} </h2>
-                <form onSubmit={handleUpdateProduct} className="bg-red-200 p-10">
+                <h2 className="text-3xl font-semibold text-center mt-10 text-black">Update Product : <span className="text-red-500"> {prod_name}</span> </h2>
+                <form onSubmit={handleUpdateProduct} className="bg-red-200 rounded-md my-10 p-10">
                     {/* form row 1*/}
                     <div className="md:flex items-center mb-5">
                         <div className="form-control md:w-1/2">

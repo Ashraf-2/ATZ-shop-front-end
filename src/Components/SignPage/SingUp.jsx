@@ -2,12 +2,14 @@
 import { useContext, useState } from "react";
 import swal from "sweetalert";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const SingUp = () => {
     const {createUser,updateUser} = useContext(AuthContext);
 
     const [registerError, setRegisterError] = useState("");
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleSignUp = (e) => {
         e.preventDefault();
@@ -52,12 +54,9 @@ const SingUp = () => {
                 console.log(error);
               });
             swal("Congratulations", "Your signup successfull!", "success");
+            navigate(location?.state ? location.state : '/');
         })
         .catch(error=> console.log(error) )
-       
-
-
-
 
     }
     return (

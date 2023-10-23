@@ -1,5 +1,28 @@
+// import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+// import { useState } from 'react';
+
+// import {Swipeable} from 'react-swipeable';
+
 
 const ImageSlider = () => {
+    // const [currentImage, setCurrentImage] = useState(0);
+
+    // const images = [
+    //     'https://imagizer.imageshack.com/img922/9757/N0gZ35.jpg',
+    //     'https://imagizer.imageshack.com/img923/8995/hzI8cw.jpg',
+    //     'https://imagizer.imageshack.com/img923/1239/J7s2iE.jpg',
+    // ];
+
+    // const nextImage = () => {
+    //     setCurrentImage((currentImage + 1) % images.length);
+    // };
+
+    // const prevImage = () => {
+    //     setCurrentImage((currentImage - 1 + images.length) % images.length);
+    // };
+
+
     return (
         <div>
             <div className="carousel w-full">
@@ -26,6 +49,10 @@ const ImageSlider = () => {
                 </div>
                 
             </div>
+            
+            {/* <Swipeable onSwipedLeft={nextImage} onSwipedRight={prevImage}>
+                <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
+            </Swipeable> */}
         </div>
     );
 };

@@ -34,10 +34,10 @@ const AddProduct = () => {
     }
     return (
         <div>
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl my-10 mx-auto">
 
-                <h2 className="text-3xl font-bold text-center py-5 text-sky-500">Add Your Product</h2>
-                <form onSubmit={handelAddProduct} className="bg-red-200 p-10">
+                <h2 className="text-3xl font-bold text-center text-red-500">Add Your Product</h2>
+                <form onSubmit={handelAddProduct} className="bg-red-200 rounded-md mt-10 p-10">
                     {/* form row 1*/}
                     <div className="md:flex items-center mb-5">
                         <div className="form-control md:w-1/2">

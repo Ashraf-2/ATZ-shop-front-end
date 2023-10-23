@@ -1,7 +1,7 @@
 
 const HomeBanner = () => {
     return (
-        <div className="md:px-10 w-full flex flex-col justify-center  md:flex-row">
+        <div className="md:px-10 w-full flex flex-col justify-center  md:flex-row bg-[#FFF6F6]">
             {/* <div className="hero min-h-screen bg-base-200"  style={{backgroundImage: 'url(https://images.pexels.com/photos/4087393/pexels-photo-4087393.jpeg?cs=srgb&dl=pexels-luna-lovegood-4087393.jpg&fm=jpg)'}}>
             <div className="hero-overlay bg-opacity-20"></div>
                 <div className="hero-content text-center">

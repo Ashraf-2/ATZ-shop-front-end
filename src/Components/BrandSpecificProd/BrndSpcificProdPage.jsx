@@ -36,6 +36,7 @@ const BrndSpcificProdPage = () => {
             <div>
                 <ImageSlider></ImageSlider>
             </div>
+            <p className="my-10"><span className="mx-10 text-4xl font-medium border-b-2 border-black">{brandname} Products</span></p>
             {/* to show specific branded products */}
             {
                 results.length > 0 ?
