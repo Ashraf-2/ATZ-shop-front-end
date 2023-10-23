@@ -8,7 +8,7 @@ const CartedSingleProduct = ({ product,carts,setLoadCarts }) => {
     const handleDelete = (id) => {
         console.log("dlt id: ",id);
         //make sure to dlt by user ; swl
-        fetch(`https://e-cmrc-server-side-ashraf-2.vercel.app/${id}`,{
+        fetch(`https://e-cmrc-server-side-ashraf-2.vercel.app/cart/${id}`,{
             method: 'DELETE' 
         })
         .then(res => res.json())
