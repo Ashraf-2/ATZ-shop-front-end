@@ -17,7 +17,7 @@ const AddProduct = () => {
         const newProduct = { prod_name, rating, price, description, photo_url, brand_name,prod_type };
         
         //now send data to server
-        fetch('http://localhost:5000/products',{
+        fetch('https://e-cmrc-server-side-ashraf-2.vercel.app/products',{
             method: "POST",
             headers: {
                 'content-type': 'application/json'

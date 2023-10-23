@@ -7,7 +7,7 @@ const ShowSingleProduct = ({ product }) => {
     const { _id, prod_name: prodName, prod_type, brand_name, price, photo_url, rating, description } = product;
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 dark:bg-slate-600 dark:text-white shadow-xl">
                 <figure><img src={photo_url} alt="Shoes" /></figure>
                 <div className="card-body">
                     <div className="flex justify-between items-center">

@@ -24,23 +24,8 @@ const UpdateProduct = () => {
 
         console.log("updated information: ", updatedProduct);
 
-        // fetch(`http://localhost:5000/products/${_id}`, {
-        //     method: "PUT",
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(updatedProduct)
-        // })
-        // .then(res => res.json())
-        // .then(data => {
-        //     console.log(data)
-        //     // alert("data send successfully");
-        //     /**
-        //      * if(data.modifiedCount > 0)
-        //      */
-        //     swal("congratulations!", "you updated your coffee successfully", "success");
-        // })
-    fetch(`http://localhost:5000/products/${_id}`, {
+        
+    fetch(`https://e-cmrc-server-side-ashraf-2.vercel.app/${_id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

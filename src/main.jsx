@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       {
         path: '/myCart',
         element:<PrivateRoutes><MyCart></MyCart></PrivateRoutes> ,
-        loader: () => fetch('http://localhost:5000/cart')
+        loader: () => fetch('https://e-cmrc-server-side-ashraf-2.vercel.app/cart')
       },
       {
         path: '/login',
@@ -53,17 +53,17 @@ const router = createBrowserRouter([
       {
         path: '/brandSpcificProd/:brandname',
         element: <BrndSpcificProd></BrndSpcificProd>,
-        loader: ()=> fetch('http://localhost:5000/products')
+        loader: ()=> fetch('https://e-cmrc-server-side-ashraf-2.vercel.app/products')
       },
       {
         path: '/detailedProduct/:_id',
         element: <PrivateRoutes><DetailedProduct></DetailedProduct></PrivateRoutes>,
-        loader: ()=> fetch('http://localhost:5000/products')
+        loader: ()=> fetch('https://e-cmrc-server-side-ashraf-2.vercel.app/products')
       },
       {
         path: "/updateProduct/:id",
         element: <PrivateRoutes><UpdateProduct></UpdateProduct></PrivateRoutes>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://e-cmrc-server-side-ashraf-2.vercel.app/${params.id}`)
       },
       
       

@@ -5,22 +5,21 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const MyCart = () => {
     const carts = useLoaderData();
-    // console.log(carts);
+    // console.log("carts in overall cart page", carts);
     const { user } = useContext(AuthContext);
-    console.log("user: ", user);
+    // console.log("user: ", user);
     // console.log(user.email);
+    const [loadCarts,setLoadCarts] = useState(carts);
+    console.log("loadcarts: ",loadCarts);
 
-
-    const results = carts.filter(result => (result.userEmail) === user.email);
-    console.log(results);
-
+    const results = loadCarts.filter(result => result.userEmail === user.email);
+    console.log("results", results);
 
     return (
         <div>
-            <div className=" max-w-lg mx-auto">
+            <div className=" max-w-lg md:mx-auto mx-5">
                 {
-
-                    results.length > 0 ? results.map(product => <CartedSingleProduct key={product._id} product={product} ></CartedSingleProduct>) 
+                    results?.length > 0 ? results.map(product => <CartedSingleProduct key={product._id} product={product} carts={results} setLoadCarts={setLoadCarts} ></CartedSingleProduct>) 
                     : 
                     <div className="my-20">
                         <img src="https://imagizer.imageshack.com/img922/7219/1jlllR.jpg" alt="no-cart" />

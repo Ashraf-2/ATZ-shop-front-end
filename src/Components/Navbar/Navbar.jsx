@@ -16,9 +16,9 @@ const Navbar = () => {
             .catch(error => console.log(error))
     }
     const navlinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/addProduct">Add Product</NavLink></li>
-        <li><NavLink to="/myCart">My Cart</NavLink></li>
+        <li className="dark:bg-red-400 dark:text-white"><NavLink to="/">Home</NavLink></li>
+        <li className="dark:bg-red-400 dark:text-white"><NavLink to="/addProduct">Add Product</NavLink></li>
+        <li className="dark:bg-red-400 dark:text-white"><NavLink to="/myCart">My Cart</NavLink></li>
     </>
     return (
         
@@ -48,11 +48,11 @@ const Navbar = () => {
 
                                 <div className="dropdown dropdown-end">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                        <div className="w-10 rounded-full">
+                                        <div className="w-10 rounded-full ">
                                             <img src={user.photoURL?user.photoURL : "no pic"} />
                                         </div>
                                     </label>
-                                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 dark:bg-slate-700 dark:text-white">
                                         <li>
                                             <a className="justify-between">
                                                 {user.displayName ? user.displayName : "null"}
@@ -76,7 +76,6 @@ const Navbar = () => {
                                 <Link to="/signup">
                                     <button className="btn">Sing Up</button>
                                 </Link>
-
                             </div>
                     }
                 </div>

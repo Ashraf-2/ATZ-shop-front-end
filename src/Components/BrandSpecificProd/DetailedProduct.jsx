@@ -25,7 +25,7 @@ const DetailedProduct = () => {
 
 
     const handleAddCart = () => {
-        fetch('http://localhost:5000/cart', {
+        fetch('https://e-cmrc-server-side-ashraf-2.vercel.app/cart', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
