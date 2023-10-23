@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { useTheme } from "../../Hooks/UseTheme";
+import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
+    const {changeTheme,mode} = useTheme();
 
 
     const handleSignOut = () => {
@@ -19,7 +22,7 @@ const Navbar = () => {
     </>
     return (
         
-            <div className="navbar px-10 bg-[#FFDFDF]">
+            <div className="navbar px-10 bg-pink-100 dark:bg-slate-900 dark:text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -40,6 +43,9 @@ const Navbar = () => {
                     {
                         user ?
                             <div className="flex items-center">
+                                <p onClick={changeTheme} className="rounded-xl mr-4 text-xl
+                                ">{mode ==="dark"?<MdOutlineDarkMode></MdOutlineDarkMode>:<MdDarkMode></MdDarkMode>}</p>
+
                                 <div className="dropdown dropdown-end">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                         <div className="w-10 rounded-full">
@@ -60,7 +66,10 @@ const Navbar = () => {
                                 {/* <Link to="/"><button onClick={handleSignOut} className="btn">Sign Out</button></Link> */}
                             </div>
                             :
-                            <div className="flex gap-1">
+                            <div className="flex items-center gap-1">
+                                <p onClick={changeTheme} className="rounded-xl mr-4 text-xl cursor-pointer
+                                ">{mode ==="dark"?<MdOutlineDarkMode></MdOutlineDarkMode>:<MdDarkMode></MdDarkMode>}</p>
+
                                 <Link to="/login">
                                     <button className="btn">Login</button>
                                 </Link>

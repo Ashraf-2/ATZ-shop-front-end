@@ -6,25 +6,25 @@ import swal from "sweetalert";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const DetailedProduct = () => {
-    const { prodName } = useParams();
-    console.log(prodName);
+    const { _id } = useParams();
+    console.log("_id:",_id);
     const {user} = useContext(AuthContext);
-
+    console.log("user:",user);
     const allproducts = useLoaderData();
     console.log(allproducts);
-    const result = allproducts.find(product => product.prod_name === prodName)
+
+    const result = allproducts.find(product => product._id === _id)
     console.log("only specific prod in details page: ", result);
-    const { _id, prod_name, prod_type, brand_name, price, photo_url, rating, description } = result;
-    console.log("result id: ", prod_name);
-    console.log("user and id :",user,_id,prod_name);
-    const newCart = {_id, prod_name, prod_type, brand_name, price, photo_url, rating, description,userEmail: user.email};
+    const { prod_name, prod_type, brand_name, price, photo_url, rating, description } = result;
+    console.log("resulted product: ", prod_name);
+    console.log("user and id :",user,prod_name);
+    const newCart = { prod_name, prod_type, brand_name, price, photo_url, rating, description,userEmail: user.email};
     console.log("newcart: ",newCart);
 
 
 
 
     const handleAddCart = () => {
-        //now send data to server
         fetch('http://localhost:5000/cart', {
             method: "POST",
             headers: {
@@ -51,15 +51,11 @@ const DetailedProduct = () => {
                     <p className="text-xl font-semibold">Price: <span className="text-red-500">${price}</span></p>
                     <div className="flex flex-row">
 
-                        <span className="text-xl font-semibold">Rating:</span>
-                        <span className="text-green-400">
-                            <Rating
-                                initialRating={3}
-                                readonly />
-                        </span>
+                        <span className="text-xl font-semibold">Rating: {rating}/5</span>
+                    
                     </div>
                     <div>
-                        <button onClick={handleAddCart} className="btn btn-neutral w-2/3 text-xl mt-5">
+                        <button onClick={handleAddCart} className="btn btn-neutral w-full text-xl mt-5">
                             <BsFillCartCheckFill></BsFillCartCheckFill>
                             Cart
                         </button>

@@ -4,7 +4,7 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 
 const Features = () => {
     return (
-        <div className="bg-[#FFF6F6] py-10">
+        <div className="bg-[#FFF6F6] py-10 dark:bg-slate-800 dark:text-white">
             <h2 className="text-center text-4xl font-bold text-[#FF5722] mb-10">Customer Satisfaction is our first priority</h2>
             <div className="flex flex-col md:flex-row justify-around gap-5">
                 <div className="flex flex-col items-center">

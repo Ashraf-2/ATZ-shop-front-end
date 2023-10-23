@@ -10,7 +10,7 @@ const HomeBrands = ({ brand }) => {
     return (
         <Link to={`/brandSpcificProd/${brandname}`}>
             {/* to={brandname && 'Apple' ? '/appleProducts':'/' */}
-            <div className="card  bg-base-100 shadow-xl">
+            <div className="card  bg-base-100 shadow-xl dark:bg-slate-500 dark:text-white">
                 <figure><img className="h-[200px]" src={image} alt={brandname} /></figure>
                 <div className="flex justify-center items-center">
                     <h2 className="card-title text-center my-4">{brandname}</h2>

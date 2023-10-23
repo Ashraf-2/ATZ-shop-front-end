@@ -24,7 +24,7 @@ const ShowSingleProduct = ({ product }) => {
                             <Link to={`/updateProduct/${_id}`}>
                             <button className="btn btn-neutral w-full mt-5">Update Product</button>
                             </Link>
-                            <Link to={`/detailedProduct/${prodName}`} product={product}>
+                            <Link to={`/detailedProduct/${_id}`} product={product}>
                                 <button className="btn btn-neutral w-full mt-5">Details</button>
                             </Link>
                         </div>

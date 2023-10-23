@@ -9,20 +9,11 @@ const BrndSpcificProdPage = () => {
 
     const [sliderImages, setSliderImages] = useState([]);
     // const [specificBrandSlider,setSpecificBrandSlider] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:5000/sliderImage')
-            .then(res => res.json())
-            .then(data => {
-                console.log("data for slider:", data);
-                setSliderImages(data)
-            })
-    }, [])
+    
     console.log("slider images: ", sliderImages);
     console.log("brandname: ", brandname);
-    const resultForBrandedSliders = sliderImages.filter(slider => (slider.brand_name) === brandname);
-    console.log("resultForBrandedSliders:", resultForBrandedSliders);
 
-    // console.log(resultForBrandedSliders[0].image);
+
 
     const products = useLoaderData();
     // console.log('products: ',products);

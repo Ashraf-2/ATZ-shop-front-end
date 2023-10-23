@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 
 import { AiFillGoogleCircle } from 'react-icons/ai';
@@ -73,7 +73,7 @@ const Login = () => {
                         </div>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form onSubmit={handleLogin} className="card-body">
+                        <form onSubmit={handleLogin} className="card-body py-2">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -86,13 +86,14 @@ const Login = () => {
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                             </div>
-                            <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                            <div className="form-control mt-3">
+                                <button className="btn btn-neutral">Login</button>
                             </div>
+                            <p>Have not account? <Link to="/signup" className="font-bold">Sign Up</Link> </p>
                         </form>
-                        <div className='flex flex-col items-center mt-3 mb-5'>
+                        <div className='flex flex-col items-center mb-5'>
                             <p>or Sign in using</p>
-                            <button onClick={handleGoogle} className="btn text-red-600 text-4xl hover:cursor-pointer"><AiFillGoogleCircle></AiFillGoogleCircle>
+                            <button onClick={handleGoogle} className="btn text-red-600 text-4xl hover:cursor-pointer mt-2"><AiFillGoogleCircle></AiFillGoogleCircle>
                             </button>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ const Contact = () => {
 
     }
     return (
-        <div className="py-10 md:px-10 px-5 bg-[#F875AA] bg-opacity-30">
+        <div className="py-10 md:px-10 px-5 bg-[#F875AA] bg-opacity-30 dark:bg-slate-700 dark:text-white">
             <h2 className="text-4xl text-center font-bold text-red-500">Contact Us</h2>
             <div className="flex flex-col mt-10 md:flex-row gap-5 ">
                 {/* text side */}
