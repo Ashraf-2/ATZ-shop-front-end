@@ -18,7 +18,7 @@ const Features = () => {
                 </div>
                 <div className="flex flex-col items-center">
                     <p  className="text-7xl text-[#FF5722]"><RiSecurePaymentLine></RiSecurePaymentLine></p>
-                    <h2  className="text-2xl font-medium">24/7 Service</h2>
+                    <h2  className="text-2xl font-medium">Secure Payment</h2>
                 </div>
             </div>
         </div>
